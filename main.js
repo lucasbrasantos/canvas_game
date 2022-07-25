@@ -216,8 +216,8 @@ class Enemy{
         this.draw();       
         let angle = Math.atan2(player.y - this.y, player.x - this.x)
         this.velocity = {
-            x: Math.cos(angle) * player.speed * .5,
-            y: Math.sin(angle) * player.speed * .5
+            x: Math.cos(angle) * player.speed * .7,
+            y: Math.sin(angle) * player.speed * .7
         }
         this.x += this.velocity.x;
         this.y += this.velocity.y;        
@@ -276,7 +276,7 @@ function init(){
     enemies = [];
     particles = [];
     score=0
-    spawnEnemyTime = 1000
+    spawnEnemyTime = 700
     timerMultifire = 10;
     multifire = false;
 
@@ -305,7 +305,7 @@ function createProjectile(){
 
 
 //create enemies
-var spawnEnemyTime = 1000
+var spawnEnemyTime = 700
 
 function spawnEnemies(){
 
