@@ -384,13 +384,13 @@ function animate(){
 
                 if (enemy.radius - 10 >= 15) {
                     score += 10
-
                     gsap.to(enemy, {
                         radius: enemy.radius - 10
                     })
                     
                     removeProjectile(pIndex)
                 }else{
+                    spawnEnemyTime-=2
                     removeEnemy(eIndex)
                     removeProjectile(pIndex)
                     score += 25
@@ -423,7 +423,6 @@ function animate(){
 var timerMultifire = 10; //s
 
 function allowMultifire(){
-    console.log(timerMultifire);
     if (timerMultifire == 0 && multifire == false) {
         multifire = true;
         timerMultifire = 3;
