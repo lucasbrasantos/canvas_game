@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 body{
@@ -19,4 +20,54 @@ body{
 
 canvas{
     display: block;
+}
+
+div{
+    font-size: 1.8vw;
+    padding: .5vw;
+    text-transform: capitalize;
+    position: fixed;
+}
+
+#score{
+    user-select: none;
+    color: white;
+}
+
+#ui{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -60%);
+    background: rgba(255, 255, 255, 95%);
+    padding: 2vw 4vw;
+    border-radius: 2vw;
+    user-select: none;
+}
+
+button{
+    background: hsl(208, 75%, 50%);
+    color: white;
+    padding: 1.4vw 12vw;
+    margin-top: 2vw;
+    font-size: 1.4vw;
+    border-radius: 2vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: .2vw .2vw .6vw rgba(0, 0, 0, 20%);
+    transition: .2s;
+}
+
+button:hover{
+    background: hsl(208, 65%, 60%);
+}
+
+button:active{
+    opacity: .6;
+    box-shadow: none;
 }

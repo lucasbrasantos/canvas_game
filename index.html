@@ -9,7 +9,18 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body oncontextmenu="return false;">
-        <canvas></canvas>       
+        <div>
+            <span id="score">Score: 0</span>
+        </div>
+
+        <div id="ui">
+            <h1 id="finalPoints">0</h1>
+            <p>Points</p>
+            <button id="startGameBtn">Start game</button>
+        </div>
+        <canvas></canvas>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
